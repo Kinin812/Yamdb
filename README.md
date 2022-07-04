@@ -1,6 +1,6 @@
 # yamdb_final
 yamdb_final
-https://github.com/Kinin812/yamdb_final/actions/workflows/yamdb_workflow.yml/badge.svg
+[workflow](https://github.com/Kinin812/yamdb_final/actions/workflows/yamdb_workflow.yml/badge.svg)
 
 Проект YaMDb собирает отзывы (Review) пользователей на произведения (Title). Произведения делятся на категории: "Книги", "Фильмы", "Музыка". Список категорий (Category) может быть расширен.
 Сами произведения в YaMDb не хранятся, здесь нельзя посмотреть фильм или послушать музыку.
@@ -40,18 +40,35 @@ YaMDB отправляет письмо с кодом подтверждения
 **Администратор Django** — те же права, что и у роли Администратор.
 
 # Установка
-Склонируйте репозиторий. Находясь в папке с кодом создайте виртуальное окружение `python -m venv venv`, активируйте его (Windows: `source venv\scripts\activate`; Linux/Mac: `sorce venv/bin/activate`), установите зависимости `python -m pip install -r requirements.txt`.
 
-Для запуска сервера разработки,  находясь в директории проекта выполните команды:
+Склонируйте репозитрий на свой компьютер
+Создайте .env файл в директории infra/, в котором должны содержаться следующие переменные:
 ```
-python manage.py migrate
-python manage.py createsuperuser
-python manage.py runserver
+DB_ENGINE=django.db.backends.postgresql
+DB_NAME= # название БД\ POSTGRES_USER= # ваше имя пользователя
+POSTGRES_PASSWORD= # пароль для доступа к БД
+DB_HOST=db
+DB_PORT=5432\
 ```
 
-Для импорта тестовых данных из csv-файлов,  находясь в директории проекта выполните команду:
+Из папки infra/ соберите образ при помощи docker-compose
 ```
-python manage.py bd_import
+$ docker-compose up -d --build
+```
+
+Примените миграции
+```
+$ docker-compose exec web python manage.py migrate
+```
+
+Соберите статику
+```
+$ docker-compose exec web python manage.py collectstatic --no-input
+```
+
+Для доступа к админке создать суперюзера
+```
+$ docker-compose exec web python manage.py createsuperuser
 ```
 
 Запущенный проект будет доступен по адресу [localhost:8000](http://localhost:8000/).
