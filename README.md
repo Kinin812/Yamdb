@@ -66,12 +66,17 @@ $ docker-compose exec web python manage.py migrate
 $ docker-compose exec web python manage.py collectstatic --no-input
 ```
 
-Для доступа к админке создать суперюзера
+Для доступа к админке создайте суперюзера
 ```
 $ docker-compose exec web python manage.py createsuperuser
 ```
 
-Запущенный проект будет доступен по адресу [localhost:8000](http://localhost:8000/).
+Запущенный проект доступен по адресам:
+
+[http://yp.hopto.org/redoc](http://yp.hopto.org/redoc)
+
+[http://yp.hopto.org/admin](http://yp.hopto.org/admin)
+
 =======
 # api_yamdb
 
