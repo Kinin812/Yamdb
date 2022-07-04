@@ -8,5 +8,3 @@ class ListCreateDestroyViewSet(
     viewsets.GenericViewSet,
 ):
     pass
-
-# new
