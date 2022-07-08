@@ -1,5 +1,5 @@
 # yamdb_final
-yamdb_final1
+yamdb_final
 [workflow](https://github.com/Kinin812/yamdb_final/actions/workflows/yamdb_workflow.yml/badge.svg)
 
 
