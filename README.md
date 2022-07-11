@@ -3,7 +3,7 @@ yamdb_final
 [workflow](https://github.com/Kinin812/yamdb_final/actions/workflows/yamdb_workflow.yml/badge.svg)
 
 
-## Стек технологий1
+## Стек технологий
 
 [![Python](https://img.shields.io/badge/-Python-464646?style=flat-square&logo=Python)](https://www.python.org/)
 [![Django](https://img.shields.io/badge/-Django-464646?style=flat-square&logo=Django)](https://www.djangoproject.com/)
