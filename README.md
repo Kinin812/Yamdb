@@ -1,6 +1,6 @@
-# yamdb_final
-yamdb_final
-[workflow](https://github.com/Kinin812/yamdb_final/actions/workflows/yamdb_workflow.yml/badge.svg)
+# YaMDB
+
+[workflow](https://github.com/Kinin812/Yamdb/actions/workflows/yamdb_workflow.yml/badge.svg)
 
 
 ## Стек технологий
@@ -92,7 +92,3 @@ $ docker-compose exec web python manage.py createsuperuser
 [http://yp.hopto.org/admin](http://yp.hopto.org/admin)
 
 =======
-# api_yamdb
-
-# Авторство:
-© Кирилл Калмыков
