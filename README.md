@@ -1,6 +1,6 @@
 # YaMDB
 
-[workflow](https://github.com/Kinin812/Yamdb/actions/workflows/yamdb_workflow.yml/badge.svg)
+![workflow](https://github.com/Kinin812/Yamdb/actions/workflows/yamdb_workflow.yml/badge.svg)
 
 
 ## Стек технологий
