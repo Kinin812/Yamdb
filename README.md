@@ -62,7 +62,7 @@ DB_ENGINE=django.db.backends.postgresql
 DB_NAME= # название БД\ POSTGRES_USER= # ваше имя пользователя
 POSTGRES_PASSWORD= # пароль для доступа к БД
 DB_HOST=db
-DB_PORT=5432\
+DB_PORT=5432
 ```
 
 Из папки infra/ соберите образ при помощи docker-compose
